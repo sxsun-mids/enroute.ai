@@ -653,6 +653,11 @@ a.hover-effect {
 	max-width: 100%;
   }
   
+  .tight-line-height {
+	line-height: 0.5;
+	margin: 0.5em 0;
+  }
+
   
 
 /*--sxsun customized--*/
@@ -1566,10 +1571,10 @@ ul.simplefilter {
 button.v-b {
     background: none;
     border: none;
-    padding: 0;
+    /* padding: 0; */
     color: #1a3561;
-	    font-size: 2em;
-		outline:none;
+	font-size: 2em;
+	outline:none;
 }
 /*-- contact --*/
 .mail_us{
