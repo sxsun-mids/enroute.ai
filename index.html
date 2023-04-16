@@ -90,6 +90,14 @@
 								</span>
 							</a>
 
+							<a href="#architecture" class="hover-effect scroll">
+								<span>
+									<span>DESIGN</span>
+									<span>DESIGN</span>
+									<span></span>
+								</span>
+							</a>
+
 						<a href="#staff" class="hover-effect scroll">
 								<span>
 									<span>TEAM</span>
@@ -252,6 +260,25 @@
 		  </div>
 		  
 	<!--//service-->
+
+<!-- architecture -->
+
+<div id="architecture" class="banner-bottom">
+	<div class="container">
+	    <div class="inner-w3">
+		   <h3 class="title">SYSTEM DESIGN OVERVIEW<span></span></h3>
+		</div>
+		<img src="images/enroute-design.png" alt="enRoute System Design" style="width: 100%; max-width: 100%; height: auto; margin-top: 20px;">
+		<div class="adt_grids">
+			<p>Our architecture comprises five essential components, including Data Sourcing, Data Processing, Model Training, API Endpoint, and Mobile Application.</p> 
+				<p>The first step in our process involves importing datasets from an S3 bucket and processing them using NumPy and Pandas libraries. We achieve this by developing a Lambda function that performs this task. Once the data is processed, we train our machine learning models using clustering algorithms. </p>
+				<p>To serve our machine learning model, we package it into a Docker image and push it into AWS ECR. We then create another Lambda function that acts as our model inference endpoint. This function loads the Docker image from ECR and runs it as a container. Finally, by calling the appropriate scripts or code in the Docker image, our Lambda function runs the machine learning model. The input to the model can be passed through the Lambda function's API Gateway endpoint.</p>
+				<p>We leverage AWS Lambda and API Gateway to create a cost-effective and scalable platform for data processing and machine learning model creation. Our Lambda function can be triggered by API Gateway requests, which enables us to process data and make real-time predictions. Furthermore, because we only pay for the compute time used by our Lambda function, we can keep costs low while still providing powerful data analysis and machine learning capabilities. Explore our website to learn more about our architecture and the benefits it provides.</p>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+
 <!--//team -->
 <div id="staff" class="reviews">
 		   <div class="container">
@@ -261,7 +288,7 @@
 			     <div class="staff-section">
 				    <div class="col-md-3 staff-grid  animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
 				          <div class="view fifth-effect">
-							 <a href="index.html" title="Full Image"><img src="images/t1.jpg" /></a>
+							 <a href="https://www.ischool.berkeley.edu/people/xiaoou-sun" title="Full Image" target="_blank"><img src="images/t1.jpg" /></a>
 							 <div class="mask"></div>
 						  </div>
 							<h4>Lily S</h4>
@@ -278,7 +305,7 @@
 				     </div>
 					 <div class="col-md-3 staff-grid animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
 				          <div class="view fifth-effect">
-							 <a href="index.html" title="Full Image"><img src="images/t3.jpg" /></a>
+							 <a href="https://www.ischool.berkeley.edu/people/akshat-anil" title="Full Image" target="_blank"><img src="images/t3.jpg" /></a>
 							 <div class="mask"></div>
 						  </div>
 						  <h4>Alex Anil</h4>
@@ -381,7 +408,7 @@
 	
 
 <!-- footer -->
-<div class="footer wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="0.2s">
+<div class="footer wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="0.2s" id="contact">
 	<div class="container">
 	<div class="inner-w3 agile">
 	<h3 class="title two">Contact Us <span class="two"></span></h3>
@@ -418,6 +445,13 @@
 								<span>
 									<span>FEATURES</span>
 									<span>FEATURES</span>
+									<span></span>
+								</span>
+							</a>
+							<a href="#architecture" class="hover-effect scroll">
+								<span>
+									<span>DESIGN</span>
+									<span>DESIGN</span>
 									<span></span>
 								</span>
 							</a>
