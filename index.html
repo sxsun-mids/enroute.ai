@@ -219,19 +219,31 @@
 					<h3 class="title two">OVERALL ROUTE SAFETY SCORE CALCULATION<span class="two"></span></h3>
 					</div>
 			   <div class="col-md-7 features-right">
-			    <ul class="workout-exercises">
-					<li>
-                     <h4>User chooses whether they will be running at night or during the day.</h4>
-					</li>
-					<li>
-                      <h4>User plots out running route                                       </h4>
-				    </li>
-					<li>
-                       <h4>From Victor about how Model calculates safety score               </h4>
-					</li>
-					 </ul>
+					<ul class="workout-exercises">
+						<li>
+						<h4>User chooses whether they will be running at night or during the day</h4>
+						</li>
+						<li>
+						<h4>User plots out running route</h4>
+						</li>
+						<li>
+						<h4>The assault crime clusters and motor vehicle collision clusters are pretrained using UMAP and HDBSCAN</h4>
+						</li>
+						<li>
+						<h4>Each coordinate in the user’s plotted route is fed into the pre-trained clusters to predict the assault crime cluster and motor vehicle collision cluster that each individual route coordinate point is assigned to</h4>
+						</li>
+						<li>
+						<h4>This information is fed into a safety score calculation formula, which uses the distance between the route coordinate point and cluster center normalized by the distance between the route coordinate point and the furthest point in the cluster</h4>
+						</li>
+						<li>
+						<h4>The output is thus an array of safety scores, one per coordinate point in the user's plotted route</h4>
+						</li>
+						<li>
+						<h4>The overall safety score is the 75th percentile of the array of safety scores</h4>
+						</li>
+					</ul>
 			   </div>
-			    <div class="clearfix"></div>
+			    <!-- <div class="clearfix"></div> -->
 			</div>
 		</div>
 		<!--//features-->
@@ -330,7 +342,7 @@
 	    <div class="inner-w3">
 		   <h3 class="title">TESTIMONIALS<span></span></h3>
 		</div>
-		<img src="images/testinomials.jpg" alt="Testimonials" style="width: 100%; max-width: 100%; height: auto; margin-top: 20px;">
+		<img src="images/testinomials.jpg" alt="Testimonials" style="width: 100%; max-width: 100%; height: auto; margin-top: 80px;">
 	</div>
 </div>
 <!-- gallery -->
